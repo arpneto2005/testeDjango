@@ -2,25 +2,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-      <meta charset="UTF-8">
-      <title> {%block 'titulo' %} Menu Estabelecimento {% endblock %} </title>
-  
-      <!--Import Google Icon Font-->
-      <link href="{% static 'https://fonts.googleapis.com/icon?family=Material+Icons' %}" rel="stylesheet">
-  
-      <link type="text/css" rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}"  media="screen,projection"/>
-      <!--Let browser know website is optimized for mobile-->
-  
-      <link rel="shortcut icon" type="image/x-icon" href="{% static 'imagens/chapeu.ico' %}" />
-  
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-      <link rel="stylesheet" href="{% static 'css/estilo.css' %}" />
+      {% include '_header.html' %}
+      
     </head>
     <body>
-        {% include 'header.html' %}
+        {% include '_navbar.html' %}
         {%block 'conteudo' %} {% endblock %}
-        {% include 'footer.html' %}
+        {% include '_footer.html' %}
         <!--Import jQuery before materialize.js-->
         <script type="text/javascript" src="{% static 'https://code.jquery.com/jquery-3.2.1.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
