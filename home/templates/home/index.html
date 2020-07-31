@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block 'titulo' %} Home {% endblock %}
+
+{% block 'conteudo' %}
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 offset-md-3 center">  
+      <div id="form-logar" class="d-flex justify-content-center d-flex align-items-center">
+        <form>
+          <p>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" placeholder="Informe seu E-mail" > <br>
+          </p>
+          <p> 
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" placeholder="Informe sua senha" >
+          </p>
+          <p>
+            <input id="logar" type="submit" value="Fazer Login" >
+            <input id="limpar" type="reset" value="Limpar" > <br>
+          </p>
+          <a href="/"> Esqueci a senha </a>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
